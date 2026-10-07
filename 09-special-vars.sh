@@ -1,3 +1,10 @@
 #!/bin/bash
 
-echo "All variables passed to the script $@"
+echo "All variables passed to the script: $@"
+echo "number of variables passed to the script: $#"
+echo "script name: $0"
+echo "current working directory: $PWD"
+echo "home directory of current user: HOME"
+echo "PID of the script running now: $$"
+sleep 100
+echo "PID of the slast background command: $#"
