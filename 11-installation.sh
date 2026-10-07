@@ -10,7 +10,7 @@ echo "Please run script with root previliges"
 exit 1
 fi
 
-systemctl status git
+git -v
 
 if [ $? -ne 0 ]
 then
