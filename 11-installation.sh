@@ -10,4 +10,12 @@ echo "Please run script with root previliges"
 exit 1
 fi
 
-apt install nginx
+systemctl status git
+
+if [ $? -ne 0 ]
+then
+echo "Git is not installed, install the git"
+apt install git -y
+else
+echo "Git is alredy installed nothing to do"
+fi
